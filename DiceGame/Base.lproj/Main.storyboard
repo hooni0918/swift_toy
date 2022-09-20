@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oJu-F5-SEZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="BTx-Ox-QB5">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="oJu-F5-SEZ" customClass="ViewController" customModule="DiceGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mqD-oU-xH0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mup-BW-woz">
+                                <rect key="frame" x="20" y="362" width="359" height="172"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="b3J-1l-sL6">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="172"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="Vcv-z0-lIs">
+                                                <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Vcv-z0-lIs" secondAttribute="height" multiplier="1:1" id="cgo-rK-APe"/>
+                                                    <constraint firstAttribute="width" secondItem="Vcv-z0-lIs" secondAttribute="height" multiplier="1:1" id="fIZ-PL-AIH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black1" translatesAutoresizingMaskIntoConstraints="NO" id="baP-HD-xbm">
+                                                <rect key="frame" x="187" y="0.0" width="172" height="172"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="baP-HD-xbm" secondAttribute="height" multiplier="1:1" id="YG2-HV-t85"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Vcv-z0-lIs" secondAttribute="height" multiplier="359:172" id="Rc9-fM-US3"/>
+                                            <constraint firstAttribute="height" constant="172" id="cYY-yN-Jkq"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT0-ca-WI1">
+                                <rect key="frame" x="139.5" y="742" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mbm-wP-TBF"/>
+                                    <constraint firstAttribute="width" constant="120" id="rwd-Zb-2eL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="rollbtntapped:" destination="oJu-F5-SEZ" eventType="touchUpInside" id="myY-DJ-WEw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DICE GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clc-Mj-ewd">
+                                <rect key="frame" x="134" y="111" width="130" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hhi-z4-DmY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mup-BW-woz" firstAttribute="centerY" secondItem="mqD-oU-xH0" secondAttribute="centerY" id="QkJ-50-dJa"/>
+                            <constraint firstItem="mup-BW-woz" firstAttribute="leading" secondItem="Hhi-z4-DmY" secondAttribute="leading" constant="20" id="hBw-eR-hNT"/>
+                            <constraint firstItem="Hhi-z4-DmY" firstAttribute="trailing" secondItem="mup-BW-woz" secondAttribute="trailing" constant="20" id="hxg-Gc-aLM"/>
+                            <constraint firstItem="Hhi-z4-DmY" firstAttribute="bottom" secondItem="YT0-ca-WI1" secondAttribute="bottom" constant="80" id="mtV-EK-Wbf"/>
+                            <constraint firstItem="YT0-ca-WI1" firstAttribute="centerX" secondItem="mqD-oU-xH0" secondAttribute="centerX" id="t2C-5j-hr5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="FirstImageView" destination="Vcv-z0-lIs" id="XCj-Vx-EzR"/>
+                        <outlet property="secondImageVIew" destination="baP-HD-xbm" id="fuJ-GW-JBQ"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTb-zP-dTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="540.57971014492762" y="48.883928571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="black1" width="399" height="399"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
