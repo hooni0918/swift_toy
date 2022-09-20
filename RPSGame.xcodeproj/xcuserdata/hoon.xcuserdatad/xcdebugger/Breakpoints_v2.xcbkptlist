@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AA478392-5A15-436A-AB86-0E5B651728E0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EAFBF2CD-AAD8-48DB-8564-71D246FF7F3C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPSGame/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "rpsBtnTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EAFBF2CD-AAD8-48DB-8564-71D246FF7F3C - 97892e8bc6789aa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSGame.ViewController.rpsBtnTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "RPSGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoon/Desktop/Project/Alien/RPSGame/RPSGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "EAFBF2CD-AAD8-48DB-8564-71D246FF7F3C - 97892e8bc6789aa7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RPSGame.ViewController.rpsBtnTapped(__C.UIButton) -&gt; ()"
+                  moduleName = "RPSGame"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoon/Desktop/Project/Alien/RPSGame/RPSGame/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
